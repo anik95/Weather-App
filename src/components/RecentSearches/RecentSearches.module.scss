@@ -1,0 +1,99 @@
+.ResultsContainer {
+  margin-top: 100px;
+  @media screen and (max-width: 1023px) {
+    height: 273px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 273px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+}
+
+.Results {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1023px) {
+    overflow-y: auto;
+    height: 600px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.Result {
+  background-color: #fff;
+  width: 22%;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 2.5%;
+  margin-bottom: 20px;
+  padding: 16px;
+  @media screen and (max-width: 1023px) {
+    min-width: 200px;
+    max-width: 200px;
+  }
+  @media screen and (min-width: 1400px) {
+    text-align: center;
+  }
+}
+
+.Result:nth-child(4n+4) {
+  @media screen and (min-width: 1024px) {
+    margin-right: 0;
+  }
+}
+
+.City {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  color: #919191;
+}
+
+.Country {
+  width: 27px;
+  height: 18px;
+  background-color: #f78b68;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  top: -8px;
+  text-align: center;
+  line-height: 18px;
+  margin-left: 10px;
+}
+
+.CurrentTemperature {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.CurrentTemperature span {
+  font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  top: -10px;
+}
+
+.WeatherIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.CurrentCondition {
+  font-size: 16px;
+}

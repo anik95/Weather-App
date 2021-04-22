@@ -5,8 +5,3 @@ export const incrementCounter = () => {
     type: actionTypes.INCREMENT_SUBMIT_COUNT
   }
 }
-export const updateSearch = () => {
-  return {
-    type: actionTypes.UPDATE_SEARCH
-  }
-}
